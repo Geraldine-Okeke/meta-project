@@ -1,0 +1,108 @@
+body{
+  font-family: sans-serif;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  background-color: blue;
+}
+*{
+  box-sizing: border-box;
+}
+header>img{
+  width: 100%;
+  height: 150px;
+}
+header{
+  height: auto;
+}
+nav{
+  background-color: gray;
+  color: white;
+  font: 15px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 10%;
+}
+nav *{
+  color: white;
+  padding: 5px;
+}
+.main-up{
+  background-image: url(main-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  color: white;
+  border-radius: 2%;
+  padding-top: 5px;
+  margin-top: 10px;
+}
+.main-down{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 12px;
+  
+  
+}
+.main-down>div{
+  background-color: pink;
+  width: 100%;
+  border-radius: 2%;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.main-down>div:hover{
+  box-shadow: 5px 10px yellow;
+}
+
+.main-down img{
+  width: 100%;
+  height: 300px;
+  
+}
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+footer>div:first-of-type{
+  width: 30%;
+}
+footer>div:last-of-type{
+  width: 70%;
+}
+footer img{
+  width: 50px;
+  height: 50px;
+}
+hr{
+  width: 100%
+}
+small{
+  float: right;
+}
+a:hover{
+  color: red;
+}
+a:active{
+  color: blue;
+}
+
+@media only screen and (max-width: 600px)  {
+  body{
+    width: 100%;
+    background-color: aqua;
+  }
+  body > *{
+    width: 100%;
+  }
+  .main-down{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 12px;
+
+}
+}
